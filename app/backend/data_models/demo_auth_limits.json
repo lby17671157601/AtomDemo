@@ -1,0 +1,25 @@
+{
+    "title": "demo_auth_limits",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "bucket_key": {
+            "type": "string",
+            "maxLength": 64
+        },
+        "window_epoch": {
+            "type": "integer"
+        },
+        "attempts": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "id",
+        "bucket_key",
+        "window_epoch",
+        "attempts"
+    ]
+}

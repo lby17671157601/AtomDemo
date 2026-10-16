@@ -1,0 +1,1031 @@
+2026-10-16 08:14:46,494 - main - INFO - === Logging system initialized ===
+2026-10-16 08:14:46,494 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:14:46,494 - main - INFO - Log level: DEBUG
+2026-10-16 08:14:46,494 - main - INFO - Log date: 20261016
+2026-10-16 08:14:46,762 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:14:48,035 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:14:48,053 - main - INFO - Included router: routers.health.router
+2026-10-16 08:14:48,137 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:14:48,632 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:14:48,829 - main - INFO - Included router: routers.user.router
+2026-10-16 08:14:48,831 - main - INFO - === Application startup initiated ===
+2026-10-16 08:14:48,831 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:15:07,349 - main - INFO - === Logging system initialized ===
+2026-10-16 08:15:07,349 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:15:07,349 - main - INFO - Log level: DEBUG
+2026-10-16 08:15:07,349 - main - INFO - Log date: 20261016
+2026-10-16 08:15:07,453 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:15:08,115 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:15:08,118 - main - INFO - Included router: routers.health.router
+2026-10-16 08:15:08,251 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:15:08,293 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:15:08,331 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:15:08,340 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:15:08,358 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:15:08,368 - main - INFO - Included router: routers.user.router
+2026-10-16 08:15:08,370 - main - INFO - === Application startup initiated ===
+2026-10-16 08:15:08,370 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:15:09,045 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 08:15:09,046 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 08:15:09,093 - core.database - INFO - Database connection initialized successfully
+2026-10-16 08:15:09,337 - routers.auth - INFO - [token/exchange] Received platform token exchange request
+2026-10-16 08:15:09,337 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-10-16 08:15:09,337 - routers.auth - DEBUG - [token/exchange] Verifying token with issuer: https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify
+2026-10-16 08:15:09,566 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-10-16 08:15:09,625 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fb10510da50>
+2026-10-16 08:15:09,625 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7fb1068ed940> server_hostname='auth.atoms.dev' timeout=5.0
+2026-10-16 08:15:09,633 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fb106476380>
+2026-10-16 08:15:09,634 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-10-16 08:15:09,634 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-10-16 08:15:09,634 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-10-16 08:15:09,635 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-10-16 08:15:09,635 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-10-16 08:15:09,696 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 16 Oct 2026 15:15:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'a4b804713fd03f28-LAX'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'req-arrive-time', b'1792163709683'), (b'req-cost-time', b'5'), (b'resp-start-time', b'1792163709689'), (b'x-envoy-upstream-service-time', b'5'), (b'x-mgx-request-id', b'404da0be-561c-4e51-bbfe-ed03070990ba'), (b'x-request-id', b'404da0be-561c-4e51-bbfe-ed03070990ba'), (b'x-response-time', b'0.001s'), (b'Content-Encoding', b'gzip')])
+2026-10-16 08:15:09,697 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify "HTTP/1.1 200 OK"
+2026-10-16 08:15:09,698 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-10-16 08:15:09,698 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-10-16 08:15:09,699 - httpcore.http11 - DEBUG - response_closed.started
+2026-10-16 08:15:09,699 - httpcore.http11 - DEBUG - response_closed.complete
+2026-10-16 08:15:09,699 - httpcore.connection - DEBUG - close.started
+2026-10-16 08:15:09,700 - httpcore.connection - DEBUG - close.complete
+2026-10-16 08:15:09,700 - routers.auth - DEBUG - [token/exchange] Issuer response status: 200
+2026-10-16 08:15:09,700 - routers.auth - DEBUG - [token/exchange] Issuer response body: {'success': True, 'data': {'email': '2249162495@qq.com', 'exp': 1794753438, 'iat': 1792161438, 'pv': 1, 'user_id': 1636527}, 'message': 'Platform token verified', 'code': 0, 'timestamp': '2026-10-16T23:15:09.688250'}
+2026-10-16 08:15:09,700 - routers.auth - INFO - [token/exchange] Token verified, platform_user_id=1636527, email=2249162495@qq.com
+2026-10-16 08:15:09,700 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-10-16 08:15:09,700 - routers.auth - INFO - [token/exchange] User verified: platform_user_id=1636527, role=admin
+2026-10-16 08:15:09,704 - routers.auth - DEBUG - [token/exchange] User object for token issuance: id=1636527, email=2249162495@qq.com, role=admin
+2026-10-16 08:15:09,704 - core.config - DEBUG - Read dynamic attribute jwt_expire_minutes from environment variable JWT_EXPIRE_MINUTES
+2026-10-16 08:15:09,705 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 08:15:09,858 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 08:15:09,863 - routers.auth - INFO - [token/exchange] Token issued successfully for user_id=1636527, expires_at=2026-11-15 15:15:09.705097+00:00
+2026-10-16 08:15:17,125 - main - INFO - === Logging system initialized ===
+2026-10-16 08:15:17,126 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:15:17,126 - main - INFO - Log level: DEBUG
+2026-10-16 08:15:17,126 - main - INFO - Log date: 20261016
+2026-10-16 08:15:17,241 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:15:17,897 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:15:17,901 - main - INFO - Included router: routers.health.router
+2026-10-16 08:15:18,010 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:15:18,065 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:15:18,092 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:15:18,103 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:15:18,123 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:15:18,135 - main - INFO - Included router: routers.user.router
+2026-10-16 08:15:18,136 - main - INFO - === Application startup initiated ===
+2026-10-16 08:15:18,136 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:16:45,483 - main - INFO - === Logging system initialized ===
+2026-10-16 08:16:45,483 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:16:45,484 - main - INFO - Log level: DEBUG
+2026-10-16 08:16:45,484 - main - INFO - Log date: 20261016
+2026-10-16 08:16:45,585 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:16:46,308 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:16:46,310 - main - INFO - Included router: routers.health.router
+2026-10-16 08:16:46,316 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:16:46,321 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:16:46,325 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:16:46,336 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:16:46,357 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:16:46,371 - main - INFO - Included router: routers.user.router
+2026-10-16 08:16:46,401 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:16:46,402 - main - INFO - === Application startup initiated ===
+2026-10-16 08:16:46,402 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:16:47,799 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 08:16:47,889 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 08:17:56,320 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 08:17:56,321 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 08:17:56,444 - core.database - INFO - Database connection initialized successfully
+2026-10-16 08:18:21,379 - core.config - DEBUG - Read dynamic attribute frontend_url from environment variable FRONTEND_URL
+2026-10-16 08:18:21,379 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-10-16 08:18:25,173 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:18:29,851 - main - INFO - === Logging system initialized ===
+2026-10-16 08:18:29,852 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:18:29,852 - main - INFO - Log level: DEBUG
+2026-10-16 08:18:29,852 - main - INFO - Log date: 20261016
+2026-10-16 08:18:29,966 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:18:30,704 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:18:30,707 - main - INFO - Included router: routers.health.router
+2026-10-16 08:18:30,708 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:18:30,709 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:18:30,710 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:18:30,722 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:18:30,742 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:18:30,756 - main - INFO - Included router: routers.user.router
+2026-10-16 08:18:30,785 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:18:30,787 - main - INFO - === Application startup initiated ===
+2026-10-16 08:18:30,787 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:18:31,047 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:18:43,559 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 08:18:43,560 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 08:18:43,696 - core.database - INFO - Database connection initialized successfully
+2026-10-16 08:18:45,078 - routers.auth - DEBUG - [get_dynamic_backend_url] mgx-external-domain=None, x-forwarded-host=u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev, host=localhost, scheme=https, dynamic_url=https://u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev
+2026-10-16 08:18:45,079 - routers.auth - INFO - [login] Starting OIDC flow with redirect_uri=https://u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev/api/v1/auth/callback
+2026-10-16 08:18:45,079 - core.config - DEBUG - Read dynamic attribute oidc_client_id from environment variable OIDC_CLIENT_ID
+2026-10-16 08:18:45,079 - core.config - DEBUG - Read dynamic attribute oidc_scope from environment variable OIDC_SCOPE
+2026-10-16 08:18:45,079 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-10-16 08:19:31,177 - main - INFO - === Logging system initialized ===
+2026-10-16 08:19:31,177 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:19:31,178 - main - INFO - Log level: DEBUG
+2026-10-16 08:19:31,178 - main - INFO - Log date: 20261016
+2026-10-16 08:19:31,327 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:19:32,633 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:19:32,635 - main - INFO - Included router: routers.health.router
+2026-10-16 08:19:32,637 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:19:32,638 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:19:32,639 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:19:32,651 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:19:32,673 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:19:32,686 - main - INFO - Included router: routers.user.router
+2026-10-16 08:19:32,755 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:19:32,756 - main - INFO - === Application startup initiated ===
+2026-10-16 08:19:32,757 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:20:38,849 - main - INFO - === Logging system initialized ===
+2026-10-16 08:20:38,849 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:20:38,849 - main - INFO - Log level: DEBUG
+2026-10-16 08:20:38,849 - main - INFO - Log date: 20261016
+2026-10-16 08:20:38,939 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:20:39,594 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:20:39,595 - main - INFO - Included router: routers.health.router
+2026-10-16 08:20:39,596 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:20:39,597 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:20:39,597 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:20:39,606 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:20:39,625 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:20:39,638 - main - INFO - Included router: routers.user.router
+2026-10-16 08:20:39,662 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:20:39,663 - main - INFO - === Application startup initiated ===
+2026-10-16 08:20:39,663 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:21:14,356 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:22:56,450 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:23:38,403 - main - INFO - === Logging system initialized ===
+2026-10-16 08:23:38,404 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:23:38,404 - main - INFO - Log level: DEBUG
+2026-10-16 08:23:38,404 - main - INFO - Log date: 20261016
+2026-10-16 08:23:38,520 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:23:39,294 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:23:39,297 - main - INFO - Included router: routers.health.router
+2026-10-16 08:23:39,298 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:23:39,298 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:23:39,299 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:23:39,310 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:23:39,347 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:23:39,362 - main - INFO - Included router: routers.user.router
+2026-10-16 08:23:39,380 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:23:39,382 - main - INFO - === Application startup initiated ===
+2026-10-16 08:23:39,382 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:24:13,886 - main - INFO - === Logging system initialized ===
+2026-10-16 08:24:13,886 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:24:13,887 - main - INFO - Log level: DEBUG
+2026-10-16 08:24:13,887 - main - INFO - Log date: 20261016
+2026-10-16 08:24:13,991 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:24:15,060 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:24:15,062 - main - INFO - Included router: routers.health.router
+2026-10-16 08:24:15,063 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:24:15,064 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:24:15,064 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:24:15,075 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:24:15,100 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:24:15,118 - main - INFO - Included router: routers.user.router
+2026-10-16 08:24:15,138 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:24:15,139 - main - INFO - === Application startup initiated ===
+2026-10-16 08:24:15,139 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:29:27,069 - main - INFO - === Logging system initialized ===
+2026-10-16 08:29:27,069 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:29:27,069 - main - INFO - Log level: DEBUG
+2026-10-16 08:29:27,069 - main - INFO - Log date: 20261016
+2026-10-16 08:29:27,183 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:29:27,923 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:29:27,926 - main - INFO - Included router: routers.health.router
+2026-10-16 08:29:27,926 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:29:27,927 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:29:27,928 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:29:27,937 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:29:27,955 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:29:27,968 - main - INFO - Included router: routers.user.router
+2026-10-16 08:29:27,986 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:29:27,987 - main - INFO - === Application startup initiated ===
+2026-10-16 08:29:27,987 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:29:38,781 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:30:30,402 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:31:20,404 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:32:44,939 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:34:07,093 - main - INFO - === Logging system initialized ===
+2026-10-16 08:34:07,094 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:34:07,094 - main - INFO - Log level: DEBUG
+2026-10-16 08:34:07,094 - main - INFO - Log date: 20261016
+2026-10-16 08:34:07,200 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:34:07,989 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:34:07,991 - main - INFO - Included router: routers.health.router
+2026-10-16 08:34:07,992 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:34:07,993 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:34:07,993 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:34:08,003 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:34:08,058 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:34:08,073 - main - INFO - Included router: routers.user.router
+2026-10-16 08:34:08,094 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:34:08,095 - main - INFO - === Application startup initiated ===
+2026-10-16 08:34:08,096 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:40:40,054 - main - INFO - === Logging system initialized ===
+2026-10-16 08:40:40,054 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:40:40,054 - main - INFO - Log level: DEBUG
+2026-10-16 08:40:40,054 - main - INFO - Log date: 20261016
+2026-10-16 08:40:40,151 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:40:41,002 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:40:41,044 - main - INFO - Included router: routers.health.router
+2026-10-16 08:40:41,045 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:40:41,046 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:40:41,047 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:40:41,057 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:40:41,077 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:40:41,090 - main - INFO - Included router: routers.user.router
+2026-10-16 08:40:41,113 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:40:41,114 - main - INFO - === Application startup initiated ===
+2026-10-16 08:40:41,114 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:40:46,316 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:44:02,314 - main - INFO - === Logging system initialized ===
+2026-10-16 08:44:02,314 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:44:02,314 - main - INFO - Log level: DEBUG
+2026-10-16 08:44:02,314 - main - INFO - Log date: 20261016
+2026-10-16 08:44:02,413 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:44:03,117 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:44:03,120 - main - INFO - Included router: routers.health.router
+2026-10-16 08:44:03,121 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:44:03,121 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:44:03,122 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:44:03,132 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:44:03,154 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:44:03,173 - main - INFO - Included router: routers.user.router
+2026-10-16 08:44:03,883 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:44:03,884 - main - INFO - === Application startup initiated ===
+2026-10-16 08:44:03,884 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:44:52,800 - main - INFO - === Logging system initialized ===
+2026-10-16 08:44:52,800 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:44:52,800 - main - INFO - Log level: DEBUG
+2026-10-16 08:44:52,800 - main - INFO - Log date: 20261016
+2026-10-16 08:44:52,904 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:44:53,672 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:44:53,675 - main - INFO - Included router: routers.health.router
+2026-10-16 08:44:53,676 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:44:53,677 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:44:53,677 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:44:53,688 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:44:53,715 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:44:53,729 - main - INFO - Included router: routers.user.router
+2026-10-16 08:44:54,416 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:44:54,417 - main - INFO - === Application startup initiated ===
+2026-10-16 08:44:54,418 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:44:55,738 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:45:25,767 - main - INFO - === Logging system initialized ===
+2026-10-16 08:45:25,767 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:45:25,767 - main - INFO - Log level: DEBUG
+2026-10-16 08:45:25,767 - main - INFO - Log date: 20261016
+2026-10-16 08:45:25,866 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:45:26,655 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:45:26,657 - main - INFO - Included router: routers.health.router
+2026-10-16 08:45:26,659 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:45:26,659 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:45:26,660 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:45:26,671 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:45:26,692 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:45:26,708 - main - INFO - Included router: routers.user.router
+2026-10-16 08:45:27,379 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:45:27,380 - main - INFO - === Application startup initiated ===
+2026-10-16 08:45:27,380 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:45:29,965 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:47:29,684 - main - INFO - === Logging system initialized ===
+2026-10-16 08:47:29,685 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:47:29,685 - main - INFO - Log level: DEBUG
+2026-10-16 08:47:29,685 - main - INFO - Log date: 20261016
+2026-10-16 08:47:29,792 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:47:30,452 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:47:30,454 - main - INFO - Included router: routers.health.router
+2026-10-16 08:47:30,455 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:47:30,457 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:47:30,458 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:47:30,468 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:47:30,487 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:47:30,500 - main - INFO - Included router: routers.user.router
+2026-10-16 08:47:31,170 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:47:31,171 - main - INFO - === Application startup initiated ===
+2026-10-16 08:47:31,171 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:47:43,332 - main - INFO - === Logging system initialized ===
+2026-10-16 08:47:43,332 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:47:43,332 - main - INFO - Log level: DEBUG
+2026-10-16 08:47:43,332 - main - INFO - Log date: 20261016
+2026-10-16 08:47:43,445 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:47:44,158 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:47:44,161 - main - INFO - Included router: routers.health.router
+2026-10-16 08:47:44,161 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:47:44,162 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:47:44,162 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:47:44,172 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:47:44,191 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:47:44,204 - main - INFO - Included router: routers.user.router
+2026-10-16 08:47:44,829 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:47:44,830 - main - INFO - === Application startup initiated ===
+2026-10-16 08:47:44,830 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:50:20,948 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:50:28,946 - main - INFO - === Logging system initialized ===
+2026-10-16 08:50:28,947 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:50:28,947 - main - INFO - Log level: DEBUG
+2026-10-16 08:50:28,947 - main - INFO - Log date: 20261016
+2026-10-16 08:50:29,039 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:50:29,687 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:50:29,689 - main - INFO - Included router: routers.health.router
+2026-10-16 08:50:29,689 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:50:29,690 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:50:29,691 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:50:29,703 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:50:29,728 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:50:29,753 - main - INFO - Included router: routers.user.router
+2026-10-16 08:50:30,482 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:50:30,483 - main - INFO - === Application startup initiated ===
+2026-10-16 08:50:30,483 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:51:34,502 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:53:32,871 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:54:13,543 - main - INFO - === Logging system initialized ===
+2026-10-16 08:54:13,544 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:54:13,544 - main - INFO - Log level: DEBUG
+2026-10-16 08:54:13,544 - main - INFO - Log date: 20261016
+2026-10-16 08:54:13,640 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:54:14,455 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:54:14,458 - main - INFO - Included router: routers.health.router
+2026-10-16 08:54:14,459 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:54:14,459 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:54:14,460 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:54:14,471 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:54:14,495 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:54:14,512 - main - INFO - Included router: routers.user.router
+2026-10-16 08:54:15,204 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:54:15,205 - main - INFO - === Application startup initiated ===
+2026-10-16 08:54:15,206 - main - INFO - === Application startup completed successfully ===
+2026-10-16 08:54:25,140 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 08:54:55,565 - main - INFO - === Logging system initialized ===
+2026-10-16 08:54:55,566 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 08:54:55,566 - main - INFO - Log level: DEBUG
+2026-10-16 08:54:55,566 - main - INFO - Log date: 20261016
+2026-10-16 08:54:55,661 - main - INFO - Included router: routers.aihub.router
+2026-10-16 08:54:56,458 - main - INFO - Included router: routers.auth.router
+2026-10-16 08:54:56,460 - main - INFO - Included router: routers.health.router
+2026-10-16 08:54:56,461 - main - INFO - Included router: routers.messages.router
+2026-10-16 08:54:56,462 - main - INFO - Included router: routers.project_files.router
+2026-10-16 08:54:56,462 - main - INFO - Included router: routers.projects.router
+2026-10-16 08:54:56,472 - main - INFO - Included router: routers.settings.router
+2026-10-16 08:54:56,492 - main - INFO - Included router: routers.storage.router
+2026-10-16 08:54:56,506 - main - INFO - Included router: routers.user.router
+2026-10-16 08:54:57,101 - main - INFO - Included router: routers.workspace.router
+2026-10-16 08:54:57,102 - main - INFO - === Application startup initiated ===
+2026-10-16 08:54:57,102 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:07:21,811 - main - INFO - === Logging system initialized ===
+2026-10-16 09:07:21,811 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:07:21,811 - main - INFO - Log level: DEBUG
+2026-10-16 09:07:21,812 - main - INFO - Log date: 20261016
+2026-10-16 09:07:21,952 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:07:22,681 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:07:22,684 - main - INFO - Included router: routers.health.router
+2026-10-16 09:07:22,684 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:07:22,685 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:07:22,686 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:07:22,695 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:07:22,714 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:07:22,740 - main - INFO - Included router: routers.user.router
+2026-10-16 09:07:23,410 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:07:23,411 - main - INFO - === Application startup initiated ===
+2026-10-16 09:07:23,411 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:07:28,157 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:09:02,865 - main - INFO - === Logging system initialized ===
+2026-10-16 09:09:02,865 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:09:02,865 - main - INFO - Log level: DEBUG
+2026-10-16 09:09:02,865 - main - INFO - Log date: 20261016
+2026-10-16 09:09:02,956 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:09:03,660 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:09:03,662 - main - INFO - Included router: routers.health.router
+2026-10-16 09:09:03,663 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:09:04,341 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:09:04,341 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:09:04,342 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:09:04,351 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:09:04,370 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:09:04,381 - main - INFO - Included router: routers.user.router
+2026-10-16 09:09:04,381 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:09:04,383 - main - INFO - === Application startup initiated ===
+2026-10-16 09:09:04,383 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:09:48,501 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:10:29,867 - main - INFO - === Logging system initialized ===
+2026-10-16 09:10:29,868 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:10:29,868 - main - INFO - Log level: DEBUG
+2026-10-16 09:10:29,868 - main - INFO - Log date: 20261016
+2026-10-16 09:10:29,963 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:10:30,655 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:10:30,658 - main - INFO - Included router: routers.health.router
+2026-10-16 09:10:30,659 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:10:31,338 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:10:31,339 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:10:31,340 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:10:31,349 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:10:31,368 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:10:31,381 - main - INFO - Included router: routers.user.router
+2026-10-16 09:10:31,382 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:10:31,383 - main - INFO - === Application startup initiated ===
+2026-10-16 09:10:31,383 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:13:34,862 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:14:22,548 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:15:41,704 - main - INFO - === Logging system initialized ===
+2026-10-16 09:15:41,704 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:15:41,704 - main - INFO - Log level: DEBUG
+2026-10-16 09:15:41,704 - main - INFO - Log date: 20261016
+2026-10-16 09:15:41,836 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:15:42,645 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:15:42,647 - main - INFO - Included router: routers.health.router
+2026-10-16 09:15:42,648 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:15:43,253 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:15:43,254 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:15:43,254 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:15:43,263 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:15:43,282 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:15:43,292 - main - INFO - Included router: routers.user.router
+2026-10-16 09:15:43,292 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:15:43,293 - main - INFO - === Application startup initiated ===
+2026-10-16 09:15:43,293 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:20:08,161 - main - INFO - === Logging system initialized ===
+2026-10-16 09:20:08,162 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:20:08,162 - main - INFO - Log level: DEBUG
+2026-10-16 09:20:08,162 - main - INFO - Log date: 20261016
+2026-10-16 09:20:08,259 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:20:09,064 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:20:09,067 - main - INFO - Included router: routers.health.router
+2026-10-16 09:20:09,068 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:20:09,710 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:20:09,711 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:20:09,712 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:20:09,721 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:20:09,741 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:20:09,751 - main - INFO - Included router: routers.user.router
+2026-10-16 09:20:09,752 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:20:09,753 - main - INFO - === Application startup initiated ===
+2026-10-16 09:20:09,753 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:20:20,041 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:20:36,677 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 09:20:36,678 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 09:20:36,797 - core.database - INFO - Database connection initialized successfully
+2026-10-16 09:20:38,252 - routers.auth - DEBUG - [get_dynamic_backend_url] mgx-external-domain=None, x-forwarded-host=u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev, host=localhost, scheme=https, dynamic_url=https://u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev
+2026-10-16 09:20:38,252 - routers.auth - INFO - [login] Starting OIDC flow with redirect_uri=https://u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev/api/v1/auth/callback
+2026-10-16 09:20:38,253 - core.config - DEBUG - Read dynamic attribute oidc_client_id from environment variable OIDC_CLIENT_ID
+2026-10-16 09:20:38,253 - core.config - DEBUG - Read dynamic attribute oidc_scope from environment variable OIDC_SCOPE
+2026-10-16 09:20:38,253 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-10-16 09:20:52,665 - routers.auth - DEBUG - [get_dynamic_backend_url] mgx-external-domain=None, x-forwarded-host=u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev, host=localhost, scheme=https, dynamic_url=https://u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev
+2026-10-16 09:20:53,318 - routers.auth - INFO - [callback] Exchanging code for tokens with redirect_uri=https://u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev/api/v1/auth/callback
+2026-10-16 09:20:53,318 - core.config - DEBUG - Read dynamic attribute oidc_client_secret from environment variable OIDC_CLIENT_SECRET
+2026-10-16 09:20:53,525 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-10-16 09:20:53,538 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f75349e7f40>
+2026-10-16 09:20:53,539 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7f75376bc8c0> server_hostname='auth.atoms.dev' timeout=5.0
+2026-10-16 09:20:53,551 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f75349e46a0>
+2026-10-16 09:20:53,551 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-10-16 09:20:53,551 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-10-16 09:20:53,551 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-10-16 09:20:53,552 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-10-16 09:20:53,552 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-10-16 09:20:53,647 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 16 Oct 2026 16:20:53 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'a4b864bab899c65b-LAX'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'req-arrive-time', b'1792167653583'), (b'req-cost-time', b'59'), (b'resp-start-time', b'1792167653642'), (b'x-envoy-upstream-service-time', b'58'), (b'x-mgx-request-id', b'0c6bf431-2b3e-4b03-a128-612a82e7a3b5'), (b'x-request-id', b'0c6bf431-2b3e-4b03-a128-612a82e7a3b5'), (b'x-response-time', b'0.054s'), (b'Content-Encoding', b'gzip')])
+2026-10-16 09:20:53,648 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/token "HTTP/1.1 200 OK"
+2026-10-16 09:20:53,648 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-10-16 09:20:53,649 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-10-16 09:20:53,649 - httpcore.http11 - DEBUG - response_closed.started
+2026-10-16 09:20:53,649 - httpcore.http11 - DEBUG - response_closed.complete
+2026-10-16 09:20:53,650 - httpcore.connection - DEBUG - close.started
+2026-10-16 09:20:53,650 - httpcore.connection - DEBUG - close.complete
+2026-10-16 09:20:53,754 - core.auth - INFO - Fetching JWKS from: https://auth.atoms.dev/api/v1/oidc/.well-known/jwks.json
+2026-10-16 09:20:53,755 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=60.0 socket_options=None
+2026-10-16 09:20:53,769 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f7534ba0490>
+2026-10-16 09:20:53,769 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7f75348c5940> server_hostname='auth.atoms.dev' timeout=60.0
+2026-10-16 09:20:53,775 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7f7534ba0dc0>
+2026-10-16 09:20:53,775 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'GET']>
+2026-10-16 09:20:53,776 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-10-16 09:20:53,776 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'GET']>
+2026-10-16 09:20:53,776 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-10-16 09:20:53,776 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'GET']>
+2026-10-16 09:20:54,236 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 16 Oct 2026 16:20:54 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'a4b864bc1e47504c-LAX'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Cache-Control', b'public, max-age=3600'), (b'Server', b'cloudflare'), (b'req-arrive-time', b'1792167654197'), (b'req-cost-time', b'7'), (b'resp-start-time', b'1792167654204'), (b'x-envoy-upstream-service-time', b'5'), (b'x-mgx-request-id', b'8482ee98-3276-4dd0-bcbf-babffe1e9d28'), (b'x-request-id', b'8482ee98-3276-4dd0-bcbf-babffe1e9d28'), (b'x-response-time', b'0.001s'), (b'Content-Encoding', b'gzip')])
+2026-10-16 09:20:54,237 - httpx - INFO - HTTP Request: GET https://auth.atoms.dev/api/v1/oidc/.well-known/jwks.json "HTTP/1.1 200 OK"
+2026-10-16 09:20:54,237 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'GET']>
+2026-10-16 09:20:54,238 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-10-16 09:20:54,238 - httpcore.http11 - DEBUG - response_closed.started
+2026-10-16 09:20:54,238 - httpcore.http11 - DEBUG - response_closed.complete
+2026-10-16 09:20:54,238 - core.auth - INFO - Successfully fetched JWKS with 1 keys
+2026-10-16 09:20:54,238 - httpcore.connection - DEBUG - close.started
+2026-10-16 09:20:54,239 - httpcore.connection - DEBUG - close.complete
+2026-10-16 09:20:54,248 - services.auth - DEBUG - [DB_OP] Starting get_or_create_user - platform_sub: 1636527
+2026-10-16 09:20:54,611 - services.auth - DEBUG - [DB_OP] User lookup completed in 0.3634s - found: True
+2026-10-16 09:20:54,611 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-10-16 09:20:54,611 - services.auth - DEBUG - [DB_OP] Starting user commit/refresh
+2026-10-16 09:20:55,092 - services.auth - DEBUG - [DB_OP] User commit/refresh completed in 0.4805s
+2026-10-16 09:20:55,092 - core.config - DEBUG - Read dynamic attribute jwt_expire_minutes from environment variable JWT_EXPIRE_MINUTES
+2026-10-16 09:20:55,093 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 09:20:55,093 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 09:20:55,093 - routers.auth - INFO - [callback] OIDC callback successful, redirecting to https://u6b99-4249ed989f5d45b79f0d0d7324f7c0a1-preview.app.atoms.dev/auth/callback?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNjM2NTI3IiwiZW1haWwiOiIyMjQ5MTYyNDk1QHFxLmNvbSIsInJvbGUiOiJhZG1pbiIsIm5hbWUiOiIyMjQ5MTYyNDk1IiwibGFzdF9sb2dpbiI6IjIwMjYtMTAtMTZUMTY6MjA6NTQuNjExODQ4KzAwOjAwIiwiZXhwIjoxNzk0NzU5NjU1LCJpYXQiOjE3OTIxNjc2NTUsIm5iZiI6MTc5MjE2NzY1NX0.L319TC2iz0GgQegaaCYDq8YnXQKForHJE9UvTnhc80Y&expires_at=1794759655&token_type=Bearer
+2026-10-16 09:23:44,989 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:25:19,891 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:25:59,290 - main - INFO - === Logging system initialized ===
+2026-10-16 09:25:59,290 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:25:59,290 - main - INFO - Log level: DEBUG
+2026-10-16 09:25:59,291 - main - INFO - Log date: 20261016
+2026-10-16 09:25:59,396 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:26:00,198 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:26:00,201 - main - INFO - Included router: routers.health.router
+2026-10-16 09:26:00,203 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:26:01,179 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:26:01,180 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:26:01,180 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:26:01,190 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:26:01,234 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:26:01,248 - main - INFO - Included router: routers.user.router
+2026-10-16 09:26:01,248 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:26:01,250 - main - INFO - === Application startup initiated ===
+2026-10-16 09:26:01,250 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:26:10,683 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 09:26:10,777 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 09:26:11,123 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 09:26:11,124 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 09:26:11,245 - core.database - INFO - Database connection initialized successfully
+2026-10-16 09:26:40,533 - main - INFO - === Logging system initialized ===
+2026-10-16 09:26:40,533 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:26:40,533 - main - INFO - Log level: DEBUG
+2026-10-16 09:26:40,533 - main - INFO - Log date: 20261016
+2026-10-16 09:26:40,658 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:26:41,384 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:26:41,386 - main - INFO - Included router: routers.health.router
+2026-10-16 09:26:41,387 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:26:42,002 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:26:42,039 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:26:42,039 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:26:42,050 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:26:42,069 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:26:42,081 - main - INFO - Included router: routers.user.router
+2026-10-16 09:26:42,082 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:26:42,084 - main - INFO - === Application startup initiated ===
+2026-10-16 09:26:42,084 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:29:08,509 - main - INFO - === Logging system initialized ===
+2026-10-16 09:29:08,510 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:29:08,510 - main - INFO - Log level: DEBUG
+2026-10-16 09:29:08,510 - main - INFO - Log date: 20261016
+2026-10-16 09:29:08,615 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:29:09,399 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:29:09,404 - main - INFO - Included router: routers.health.router
+2026-10-16 09:29:09,405 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:29:10,052 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:29:10,053 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:29:10,055 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:29:10,068 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:29:10,090 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:29:10,110 - main - INFO - Included router: routers.user.router
+2026-10-16 09:29:10,110 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:29:10,126 - main - INFO - === Application startup initiated ===
+2026-10-16 09:29:10,127 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:29:14,255 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 09:29:14,341 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 09:29:14,994 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 09:29:14,996 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 09:29:15,123 - core.database - INFO - Database connection initialized successfully
+2026-10-16 09:30:15,374 - main - INFO - === Logging system initialized ===
+2026-10-16 09:30:15,375 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:30:15,375 - main - INFO - Log level: DEBUG
+2026-10-16 09:30:15,375 - main - INFO - Log date: 20261016
+2026-10-16 09:30:15,470 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:30:16,162 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:30:16,165 - main - INFO - Included router: routers.health.router
+2026-10-16 09:30:16,165 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:30:16,775 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:30:16,777 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:30:16,777 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:30:16,787 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:30:16,806 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:30:16,818 - main - INFO - Included router: routers.user.router
+2026-10-16 09:30:16,818 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:30:16,819 - main - INFO - === Application startup initiated ===
+2026-10-16 09:30:16,819 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:30:16,910 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 09:30:16,990 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 09:30:47,519 - main - INFO - === Logging system initialized ===
+2026-10-16 09:30:47,520 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:30:47,520 - main - INFO - Log level: DEBUG
+2026-10-16 09:30:47,520 - main - INFO - Log date: 20261016
+2026-10-16 09:30:47,615 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:30:48,289 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:30:48,296 - main - INFO - Included router: routers.health.router
+2026-10-16 09:30:48,296 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:30:48,938 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:30:48,940 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:30:48,940 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:30:48,950 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:30:48,971 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:30:48,982 - main - INFO - Included router: routers.user.router
+2026-10-16 09:30:48,982 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:30:48,983 - main - INFO - === Application startup initiated ===
+2026-10-16 09:30:48,983 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:31:31,294 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 09:31:31,388 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 09:31:31,394 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 09:31:31,395 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 09:31:31,533 - core.database - INFO - Database connection initialized successfully
+2026-10-16 09:32:42,920 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:34:34,894 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:35:58,438 - main - INFO - === Logging system initialized ===
+2026-10-16 09:35:58,439 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:35:58,439 - main - INFO - Log level: DEBUG
+2026-10-16 09:35:58,439 - main - INFO - Log date: 20261016
+2026-10-16 09:35:58,553 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:35:59,303 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:35:59,306 - main - INFO - Included router: routers.health.router
+2026-10-16 09:35:59,306 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:35:59,937 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:35:59,938 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:35:59,939 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:35:59,948 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:35:59,966 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:35:59,976 - main - INFO - Included router: routers.user.router
+2026-10-16 09:35:59,976 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:35:59,977 - main - INFO - === Application startup initiated ===
+2026-10-16 09:35:59,977 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:41:05,647 - main - INFO - === Logging system initialized ===
+2026-10-16 09:41:05,647 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:41:05,647 - main - INFO - Log level: DEBUG
+2026-10-16 09:41:05,648 - main - INFO - Log date: 20261016
+2026-10-16 09:41:05,750 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:41:06,584 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:41:06,587 - main - INFO - Included router: routers.health.router
+2026-10-16 09:41:06,588 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:41:07,214 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:41:07,215 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:41:07,216 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:41:07,228 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:41:07,248 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:41:07,259 - main - INFO - Included router: routers.user.router
+2026-10-16 09:41:07,259 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:41:07,260 - main - INFO - === Application startup initiated ===
+2026-10-16 09:41:07,260 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:41:15,184 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 09:41:15,265 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 09:41:15,542 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 09:41:15,543 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 09:41:15,669 - core.database - INFO - Database connection initialized successfully
+2026-10-16 09:46:20,738 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 09:47:39,219 - main - INFO - === Logging system initialized ===
+2026-10-16 09:47:39,219 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:47:39,219 - main - INFO - Log level: DEBUG
+2026-10-16 09:47:39,219 - main - INFO - Log date: 20261016
+2026-10-16 09:47:39,314 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:47:40,051 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:47:40,054 - main - INFO - Included router: routers.health.router
+2026-10-16 09:47:40,055 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:47:40,734 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:47:40,735 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:47:40,735 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:47:40,744 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:47:40,763 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:47:40,773 - main - INFO - Included router: routers.user.router
+2026-10-16 09:47:40,773 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:47:40,774 - main - INFO - === Application startup initiated ===
+2026-10-16 09:47:40,774 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:50:05,480 - main - INFO - === Logging system initialized ===
+2026-10-16 09:50:05,480 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 09:50:05,481 - main - INFO - Log level: DEBUG
+2026-10-16 09:50:05,481 - main - INFO - Log date: 20261016
+2026-10-16 09:50:05,582 - main - INFO - Included router: routers.aihub.router
+2026-10-16 09:50:06,344 - main - INFO - Included router: routers.auth.router
+2026-10-16 09:50:06,346 - main - INFO - Included router: routers.health.router
+2026-10-16 09:50:06,346 - main - INFO - Included router: routers.messages.router
+2026-10-16 09:50:06,979 - main - INFO - Included router: routers.preview.router
+2026-10-16 09:50:06,980 - main - INFO - Included router: routers.project_files.router
+2026-10-16 09:50:06,981 - main - INFO - Included router: routers.projects.router
+2026-10-16 09:50:06,990 - main - INFO - Included router: routers.settings.router
+2026-10-16 09:50:07,008 - main - INFO - Included router: routers.storage.router
+2026-10-16 09:50:07,053 - main - INFO - Included router: routers.user.router
+2026-10-16 09:50:07,053 - main - INFO - Included router: routers.workspace.router
+2026-10-16 09:50:07,055 - main - INFO - === Application startup initiated ===
+2026-10-16 09:50:07,055 - main - INFO - === Application startup completed successfully ===
+2026-10-16 09:50:14,674 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 09:50:14,767 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 09:50:15,042 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 09:50:15,043 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 09:50:15,159 - core.database - INFO - Database connection initialized successfully
+2026-10-16 10:05:53,822 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 10:06:33,084 - main - INFO - === Logging system initialized ===
+2026-10-16 10:06:33,084 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:06:33,084 - main - INFO - Log level: DEBUG
+2026-10-16 10:06:33,084 - main - INFO - Log date: 20261016
+2026-10-16 10:06:33,181 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:06:33,904 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:06:33,906 - main - INFO - Included router: routers.health.router
+2026-10-16 10:06:33,907 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:06:34,575 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:06:34,576 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:06:34,577 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:06:34,588 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:06:34,609 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:06:34,622 - main - INFO - Included router: routers.user.router
+2026-10-16 10:06:34,623 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:06:34,624 - main - INFO - === Application startup initiated ===
+2026-10-16 10:06:34,624 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:06:40,060 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 10:06:40,142 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 10:06:40,797 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 10:06:40,798 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 10:06:40,903 - core.database - INFO - Database connection initialized successfully
+2026-10-16 10:07:00,333 - main - INFO - === Logging system initialized ===
+2026-10-16 10:07:00,333 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:07:00,333 - main - INFO - Log level: DEBUG
+2026-10-16 10:07:00,334 - main - INFO - Log date: 20261016
+2026-10-16 10:07:00,448 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:07:01,280 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:07:01,283 - main - INFO - Included router: routers.health.router
+2026-10-16 10:07:01,284 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:07:01,911 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:07:01,912 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:07:01,913 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:07:01,922 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:07:01,941 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:07:01,951 - main - INFO - Included router: routers.user.router
+2026-10-16 10:07:01,951 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:07:01,952 - main - INFO - === Application startup initiated ===
+2026-10-16 10:07:01,952 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:07:31,894 - main - INFO - === Logging system initialized ===
+2026-10-16 10:07:31,894 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:07:31,895 - main - INFO - Log level: DEBUG
+2026-10-16 10:07:31,895 - main - INFO - Log date: 20261016
+2026-10-16 10:07:32,006 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:07:32,801 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:07:32,807 - main - INFO - Included router: routers.health.router
+2026-10-16 10:07:32,809 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:07:33,463 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:07:33,465 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:07:33,466 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:07:33,478 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:07:33,496 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:07:33,508 - main - INFO - Included router: routers.user.router
+2026-10-16 10:07:33,508 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:07:33,509 - main - INFO - === Application startup initiated ===
+2026-10-16 10:07:33,509 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:07:48,353 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 10:07:48,445 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 10:07:48,769 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 10:07:48,770 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 10:07:48,880 - core.database - INFO - Database connection initialized successfully
+2026-10-16 10:11:56,056 - main - INFO - === Logging system initialized ===
+2026-10-16 10:11:56,056 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:11:56,056 - main - INFO - Log level: DEBUG
+2026-10-16 10:11:56,056 - main - INFO - Log date: 20261016
+2026-10-16 10:11:56,177 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:11:56,845 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:11:56,963 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:11:57,001 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:11:57,078 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:11:57,080 - main - INFO - Included router: routers.health.router
+2026-10-16 10:11:57,081 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:11:57,751 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:11:57,753 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:11:57,753 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:11:57,762 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:11:57,781 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:11:57,791 - main - INFO - Included router: routers.user.router
+2026-10-16 10:11:57,791 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:11:57,792 - main - INFO - === Application startup initiated ===
+2026-10-16 10:11:57,792 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:12:10,495 - main - INFO - === Logging system initialized ===
+2026-10-16 10:12:10,495 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:12:10,495 - main - INFO - Log level: DEBUG
+2026-10-16 10:12:10,495 - main - INFO - Log date: 20261016
+2026-10-16 10:12:10,602 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:12:11,290 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:12:11,386 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:12:11,409 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:12:11,432 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:12:11,434 - main - INFO - Included router: routers.health.router
+2026-10-16 10:12:11,435 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:12:12,186 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:12:12,187 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:12:12,188 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:12:12,198 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:12:12,217 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:12:12,227 - main - INFO - Included router: routers.user.router
+2026-10-16 10:12:12,227 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:12:12,228 - main - INFO - === Application startup initiated ===
+2026-10-16 10:12:12,229 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:12:52,557 - main - INFO - === Logging system initialized ===
+2026-10-16 10:12:52,557 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:12:52,557 - main - INFO - Log level: DEBUG
+2026-10-16 10:12:52,558 - main - INFO - Log date: 20261016
+2026-10-16 10:12:52,652 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:12:53,315 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:12:53,320 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:12:53,440 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:12:53,485 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:12:53,488 - main - INFO - Included router: routers.health.router
+2026-10-16 10:12:53,489 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:12:54,181 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:12:54,182 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:12:54,183 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:12:54,194 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:12:54,216 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:12:54,228 - main - INFO - Included router: routers.user.router
+2026-10-16 10:12:54,228 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:12:54,230 - main - INFO - === Application startup initiated ===
+2026-10-16 10:12:54,230 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:12:55,320 - main - INFO - === Logging system initialized ===
+2026-10-16 10:12:55,321 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:12:55,321 - main - INFO - Log level: DEBUG
+2026-10-16 10:12:55,321 - main - INFO - Log date: 20261016
+2026-10-16 10:12:55,423 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:12:56,084 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:12:56,086 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:12:56,186 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:12:56,209 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:12:56,211 - main - INFO - Included router: routers.health.router
+2026-10-16 10:12:56,212 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:12:56,935 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:12:56,936 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:12:56,937 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:12:56,949 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:12:56,971 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:12:56,982 - main - INFO - Included router: routers.user.router
+2026-10-16 10:12:56,982 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:12:56,984 - main - INFO - === Application startup initiated ===
+2026-10-16 10:12:56,984 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:13:11,681 - main - INFO - === Logging system initialized ===
+2026-10-16 10:13:11,681 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:13:11,681 - main - INFO - Log level: DEBUG
+2026-10-16 10:13:11,681 - main - INFO - Log date: 20261016
+2026-10-16 10:13:11,782 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:13:12,448 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:13:12,449 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:13:12,541 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:13:12,564 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:13:12,566 - main - INFO - Included router: routers.health.router
+2026-10-16 10:13:12,567 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:13:13,259 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:13:13,260 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:13:13,261 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:13:13,273 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:13:13,296 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:13:13,308 - main - INFO - Included router: routers.user.router
+2026-10-16 10:13:13,308 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:13:13,310 - main - INFO - === Application startup initiated ===
+2026-10-16 10:13:13,310 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:13:33,366 - main - INFO - === Logging system initialized ===
+2026-10-16 10:13:33,366 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:13:33,366 - main - INFO - Log level: DEBUG
+2026-10-16 10:13:33,366 - main - INFO - Log date: 20261016
+2026-10-16 10:13:33,460 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:13:34,117 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:13:34,118 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:13:34,122 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:13:34,126 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:13:34,131 - main - INFO - Included router: routers.health.router
+2026-10-16 10:13:34,133 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:13:34,735 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:13:34,736 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:13:34,737 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:13:34,746 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:13:34,764 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:13:34,773 - main - INFO - Included router: routers.user.router
+2026-10-16 10:13:34,774 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:13:34,775 - main - INFO - === Application startup initiated ===
+2026-10-16 10:13:34,775 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:14:46,051 - main - INFO - === Logging system initialized ===
+2026-10-16 10:14:46,051 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:14:46,051 - main - INFO - Log level: DEBUG
+2026-10-16 10:14:46,051 - main - INFO - Log date: 20261016
+2026-10-16 10:14:46,162 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:14:46,866 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:14:46,914 - main - INFO - Included router: routers.demo_auth.router
+2026-10-16 10:14:46,915 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:14:46,916 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:14:46,916 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:14:46,918 - main - INFO - Included router: routers.health.router
+2026-10-16 10:14:46,918 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:14:47,546 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:14:47,547 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:14:47,547 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:14:47,557 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:14:47,577 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:14:47,582 - main - INFO - Included router: routers.user.router
+2026-10-16 10:14:47,582 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:14:47,661 - main - INFO - === Application startup initiated ===
+2026-10-16 10:14:47,661 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:17:39,406 - main - INFO - === Logging system initialized ===
+2026-10-16 10:17:39,406 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:17:39,406 - main - INFO - Log level: DEBUG
+2026-10-16 10:17:39,407 - main - INFO - Log date: 20261016
+2026-10-16 10:17:39,504 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:17:40,205 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:17:40,243 - main - INFO - Included router: routers.demo_auth.router
+2026-10-16 10:17:40,244 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:17:40,245 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:17:40,245 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:17:40,247 - main - INFO - Included router: routers.health.router
+2026-10-16 10:17:40,248 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:17:41,151 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:17:41,153 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:17:41,154 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:17:41,164 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:17:41,187 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:17:41,193 - main - INFO - Included router: routers.user.router
+2026-10-16 10:17:41,194 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:17:41,279 - main - INFO - === Application startup initiated ===
+2026-10-16 10:17:41,279 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:17:42,335 - main - INFO - === Logging system initialized ===
+2026-10-16 10:17:42,335 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:17:42,335 - main - INFO - Log level: DEBUG
+2026-10-16 10:17:42,335 - main - INFO - Log date: 20261016
+2026-10-16 10:17:42,433 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:17:43,156 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:17:43,179 - main - INFO - Included router: routers.demo_auth.router
+2026-10-16 10:17:43,180 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:17:43,181 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:17:43,181 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:17:43,183 - main - INFO - Included router: routers.health.router
+2026-10-16 10:17:43,184 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:17:43,839 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:17:43,840 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:17:43,841 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:17:43,850 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:17:43,870 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:17:43,875 - main - INFO - Included router: routers.user.router
+2026-10-16 10:17:43,875 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:17:43,988 - main - INFO - === Application startup initiated ===
+2026-10-16 10:17:43,988 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:17:45,479 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 10:17:45,560 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 10:17:45,566 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 10:17:45,567 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 10:17:45,681 - core.database - INFO - Database connection initialized successfully
+2026-10-16 10:19:28,172 - main - INFO - === Logging system initialized ===
+2026-10-16 10:19:28,173 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:19:28,173 - main - INFO - Log level: DEBUG
+2026-10-16 10:19:28,173 - main - INFO - Log date: 20261016
+2026-10-16 10:19:28,264 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:19:28,944 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:19:28,967 - main - INFO - Included router: routers.demo_auth.router
+2026-10-16 10:19:28,968 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:19:28,968 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:19:28,969 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:19:28,971 - main - INFO - Included router: routers.health.router
+2026-10-16 10:19:28,971 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:19:29,578 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:19:29,579 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:19:29,579 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:19:29,588 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:19:29,607 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:19:29,612 - main - INFO - Included router: routers.user.router
+2026-10-16 10:19:29,612 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:19:29,686 - main - INFO - === Application startup initiated ===
+2026-10-16 10:19:29,687 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:19:29,700 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-10-16 10:19:29,702 - core.database - INFO - Using QueuePool for non-Lambda environment (pool_pre_ping=True, pool_size=5, max_overflow=5, pool_recycle=280s, pool_timeout=30s, pool_use_lifo=True)
+2026-10-16 10:19:29,839 - core.database - INFO - Database connection initialized successfully
+2026-10-16 10:19:30,130 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-10-16 10:19:30,212 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-10-16 10:21:05,942 - core.config - DEBUG - Read dynamic attribute frontend_url from environment variable FRONTEND_URL
+2026-10-16 10:21:05,942 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-10-16 10:21:11,445 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 10:22:07,239 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 10:22:54,970 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me
+2026-10-16 10:24:17,163 - main - INFO - === Logging system initialized ===
+2026-10-16 10:24:17,163 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:24:17,164 - main - INFO - Log level: DEBUG
+2026-10-16 10:24:17,164 - main - INFO - Log date: 20261016
+2026-10-16 10:24:17,266 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:24:18,112 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:24:18,132 - main - INFO - Included router: routers.demo_auth.router
+2026-10-16 10:24:18,133 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:24:18,134 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:24:18,134 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:24:18,136 - main - INFO - Included router: routers.health.router
+2026-10-16 10:24:18,137 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:24:18,807 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:24:18,808 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:24:18,809 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:24:18,819 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:24:18,840 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:24:18,845 - main - INFO - Included router: routers.user.router
+2026-10-16 10:24:18,845 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:24:18,929 - main - INFO - === Application startup initiated ===
+2026-10-16 10:24:18,929 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:30:38,943 - main - INFO - === Logging system initialized ===
+2026-10-16 10:30:38,943 - main - INFO - Log file: logs/app_20261016.log
+2026-10-16 10:30:38,943 - main - INFO - Log level: DEBUG
+2026-10-16 10:30:38,943 - main - INFO - Log date: 20261016
+2026-10-16 10:30:39,044 - main - INFO - Included router: routers.aihub.router
+2026-10-16 10:30:39,804 - main - INFO - Included router: routers.auth.router
+2026-10-16 10:30:39,823 - main - INFO - Included router: routers.demo_auth.router
+2026-10-16 10:30:39,824 - main - INFO - Included router: routers.demo_auth_limits.router
+2026-10-16 10:30:39,825 - main - INFO - Included router: routers.demo_credentials.router
+2026-10-16 10:30:39,825 - main - INFO - Included router: routers.demo_sessions.router
+2026-10-16 10:30:39,827 - main - INFO - Included router: routers.health.router
+2026-10-16 10:30:39,828 - main - INFO - Included router: routers.messages.router
+2026-10-16 10:30:40,425 - main - INFO - Included router: routers.preview.router
+2026-10-16 10:30:40,426 - main - INFO - Included router: routers.project_files.router
+2026-10-16 10:30:40,426 - main - INFO - Included router: routers.projects.router
+2026-10-16 10:30:40,436 - main - INFO - Included router: routers.settings.router
+2026-10-16 10:30:40,456 - main - INFO - Included router: routers.storage.router
+2026-10-16 10:30:40,461 - main - INFO - Included router: routers.user.router
+2026-10-16 10:30:40,461 - main - INFO - Included router: routers.workspace.router
+2026-10-16 10:30:40,541 - main - INFO - === Application startup initiated ===
+2026-10-16 10:30:40,541 - main - INFO - === Application startup completed successfully ===
+2026-10-16 10:30:47,649 - dependencies.auth - DEBUG - Authentication required for request GET /api/v1/auth/me

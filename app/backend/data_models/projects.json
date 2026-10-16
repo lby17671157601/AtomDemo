@@ -1,0 +1,21 @@
+{
+    "title": "projects",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "user_id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+        }
+    },
+    "required": [
+        "user_id",
+        "name"
+    ]
+}

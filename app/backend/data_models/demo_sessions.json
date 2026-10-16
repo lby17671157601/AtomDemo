@@ -1,0 +1,26 @@
+{
+    "title": "demo_sessions",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "owner_key": {
+            "type": "string",
+            "maxLength": 255
+        },
+        "session_digest": {
+            "type": "string",
+            "maxLength": 64
+        },
+        "expires_epoch": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "id",
+        "owner_key",
+        "session_digest",
+        "expires_epoch"
+    ]
+}

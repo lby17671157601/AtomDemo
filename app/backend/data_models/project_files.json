@@ -1,0 +1,29 @@
+{
+    "title": "project_files",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "user_id": {
+            "type": "string"
+        },
+        "project_id": {
+            "type": "integer"
+        },
+        "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+        },
+        "content": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "user_id",
+        "project_id",
+        "path",
+        "content"
+    ]
+}
